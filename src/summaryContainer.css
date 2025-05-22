@@ -1,0 +1,165 @@
+.summary-wrapper {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  border-radius: 15px;
+}
+/*Left Side*/
+.summary-wrapper__left {
+  background: linear-gradient(to bottom, #6542fe, #4334f1);
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  padding: 0 7% 0% 7%;
+}
+.summary-wrapper__left-row1 {
+  text-align: center;
+  font-size: 25px;
+  color: #c9beff;
+  font-weight: bold;
+}
+.summary-wrapper__left-row2 {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.actual-score-line1 {
+  font-size: 70px;
+}
+.actual-score-line2 {
+  font-size: 20px;
+  color: #c9beff;
+  font-weight: bold;
+}
+.summary-wrapper__left-row3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.summary-wrapper__left-row4 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: #dad8ff;
+}
+.actual-score {
+  width: 80%;
+  /* Or any percentage/max-width you want */
+  aspect-ratio: 1 / 1;
+  /* This forces the height to be equal to the width */
+
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #3529bc, #4434f100);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 25%; /* Still remove padding */
+}
+.actual-score-line1 {
+  font-weight: bolder;
+}
+.summary-wrapper__right {
+  background-color: white;
+  width: 50%;
+  border-radius: 15px;
+}
+
+/*Right Side*/
+.summary-wrapper__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  padding: 0 7% 0% 7%;
+}
+.summary-rightside-title {
+  font-size: 25px;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+}
+.continue-button {
+  background-color: #303b59;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4% 10%;
+  color: white;
+  font-size: 19px;
+  border: none;
+  outline: none;
+}
+.continue-button:hover {
+  background: linear-gradient(to bottom, #6542fe, #4334f1);
+  cursor: pointer;
+}
+.summary-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+@media screen and (max-width: 1300px) {
+  .summary-wrapper {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .summary-wrapper {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .summary-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding-bottom: 15%;
+    box-sizing: border-box;
+  }
+  .summary-wrapper__left {
+    width: 100%;
+    height: 45%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .summary-wrapper__right {
+    width: 100%;
+    height: 50%;
+    
+  }
+  .actual-score {
+    width: 40%;
+    /* Or any percentage/max-width you want */
+    aspect-ratio: 1 / 1;
+    /* This forces the height to be equal to the width */
+
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #3529bc, #4434f100);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 25%; /* Still remove padding */
+  }
+    
+}

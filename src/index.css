@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Hanken;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2ff;
+  height: 100vh;
+  width: 100vw;
+  font-family: Hanken;
+}
+
+@media screen and (max-width: 745px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: Hanken;
+  }
+}
